@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell2Flood 격자기반 전지점 홍수 유출 모의시스템</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- icon- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrap">
+        <section class="lnb">
+            <h1><a href=""><span>Cell2Flood</span>격자기반 전지점 홍수 유출 모의시스템</a></h1>
+            <ul class="nav">
+                <li><a href="">현황조회</a></li>
+                <li><a href="" class="on">홍수모의</a></li>
+            </ul>
+            <div class="lnb_contents">          
+
+            <div class="input_wrap">
+                <label for="region" class="label_title">지역선택</label>
+                <div class="select_wrap">
+                    <select id="region" name="region" class="select_type">
+                        <option value="">경기</option>
+                        <option value="">부산</option>
+                        <option value="">인천</option>
+                      </select>
+                      <select id="" name="" class="select_type">
+                        <option value="">안성지사</option>
+                      </select>
+                      <select id="" name="" class="select_type">
+                        <option value="">마둔지점</option>
+                      </select>
+                </div>
+                
+            </div>
+
+            <style>
+.input_wrap{display:flex;flex-wrap:wrap}
+.input_wrap .label_title{min-width:85px;height:50px;background:#F3F5F8;color:#9399A3;display:flex;align-items:center;justify-content:center;border:1px solid #C7D1DF}
+.input_wrap .select_wrap{display:flex;flex:1;min-width:0;}
+.input_wrap .select_wrap select{border:1px solid #C7D1DF;font-size:16px;flex:1;min-width:0;height:50px;margin-left:-1px}
+
+
+            </style>
+
+
+            </div>
+        </section>
+        <section class="map">
+            <img src="images/map_sample.png" alt="지도샘플">
+        </section>
+
+        
+    </div>
+</body>
+</html>
