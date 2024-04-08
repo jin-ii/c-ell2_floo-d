@@ -21,9 +21,9 @@
             </ul>
             <div class="lnb_contents">          
 
-            <div class="input_wrap">
+            <div class="field_type1">
                 <label for="region" class="label_title">지역선택</label>
-                <div class="select_wrap">
+                <div class="field_wrap">
                     <select id="region" name="region" class="select_type">
                         <option value="">경기</option>
                         <option value="">부산</option>
@@ -35,24 +35,299 @@
                       <select id="" name="" class="select_type">
                         <option value="">마둔지점</option>
                       </select>
-                </div>
-                
+                </div>                
             </div>
 
-            <style>
-.input_wrap{display:flex;flex-wrap:wrap}
-.input_wrap .label_title{min-width:85px;height:50px;background:#F3F5F8;color:#9399A3;display:flex;align-items:center;justify-content:center;border:1px solid #C7D1DF}
-.input_wrap .select_wrap{display:flex;flex:1;min-width:0;}
-.input_wrap .select_wrap select{border:1px solid #C7D1DF;font-size:16px;flex:1;min-width:0;height:50px;margin-left:-1px}
+
+            <div class="field_type1 mb-10">
+                <label for="region" class="label_title">격자단위</label>
+                <div class="field_wrap_unit">
+                    <input type="text" class="txtr">
+                    <span class="unit">mm</span>
+                </div>    
+                
+                <label for="region" class="label_title ml-0">년도선택</label>
+                <div class="field_wrap_unit">
+                    <input type="text" class="txtr">
+                    <span class="unit">년도</span>
+                </div>    
+            </div>
+
+            
+          
+            <div class="field_box_wrap">
+                <div class="s_title">초기조건</div>
+                <div class="field_type2">
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">지표수심<span>(mm)</span></label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">하천수심<span>(mm)</span></label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">토양수분<span>(%)</span></label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr txt_blue font_bold">
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">지하수위<span>(%)</span></label>                  
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                    </div>
+                </div>
+                <div class="field_type2 pt-0">
+                    <div class="field_wrap3">
+                        <label for="" class="label_type1">계산시간<span>(s)</span></label>
+                        <select id="region" name="region" class="select_type txtr">
+                            <option value="">60</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div class="field_wrap3">
+                        <label for="" class="label_type1">지하수누수계수</label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                    </div>               
+                </div>
+            </div>
 
 
-            </style>
+          
+            <div class="field_box_wrap">
+                <div class="s_title">하천매개변수</div>
+                <div class="field_type2">
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">하천격자경사</label>
+                        <div class="flex">
+                            <input type="text" id="" placeholder="0" class="input_type1 mr-4 txtr">
+                            <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                        </div>
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">유입하천폭<span>(m)</span></label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr">
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">매닝계수</label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr txt_red font_bold">
+                    </div>
+                    <div class="field_wrap2">
+                        <label for="" class="label_type1">흐름누적값</label>
+                        <input type="text" id="" placeholder="0" class="input_type1 txtr txt_re dfont_bold">
+                    </div>
+                </div>               
+            </div>
 
+            <div class="flex">    
+                <div class="field_box_wrap">
+                    <div class="s_title">토양매개변수</div>
+                    <div class="field_type2">
+                        <div class="field_wrap2">
+                            <label for="" class="label_type1">깊이</label>                       
+                            <input type="text" id="" placeholder="0" class="input_type1 txtr txt_black font_bold">                  
+                        </div>
+                        <div class="field_wrap2">
+                            <label for="" class="label_type1">(fc/fi/K)</label>
+                            <input type="text" id="" placeholder="0" class="input_type1 txtr txt_black font_bold">
+                        </div>                   
+                    </div>               
+                </div>
+
+              
+                <div class="field_box_wrap">
+                    <div class="s_title">파일번호</div>
+                    <div class="field_type2">
+                        <div class="field_wrap2">
+                            <label for="" class="label_type1">번호</label>                       
+                            <input type="text" id="" placeholder="file number" class="input_type1 txtr">                  
+                        </div>                            
+                    </div>               
+                </div>
+            </div>
+
+            
+
+            <div class="field_type1">
+                <label for="region" class="label_title">강우선택</label>
+                <div class="field_wrap">
+                    <select id="region" name="region" class="select_type">
+                        <option value="">실강수량</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>                      
+                </div>                
+            </div>
+
+            <div class="field_type1">
+                <label for="region" class="label_title">조회일</label>
+                <div class="field_wrap">
+                    <input type="text">
+                    <select id="region" name="region" class="select_type">
+                        <option value="">00시</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>        
+                    <select id="region" name="region" class="select_type">
+                        <option value="">00분</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>                
+                </div>                
+            </div>
+
+            
+            <div class="field_type1">
+                <label for="region" class="label_title">강우량</label>
+                <div class="field_wrap">
+                   <textarea name="" id="" cols="30" rows="10">
+
+                   </textarea>      
+                </div>                
+            </div>
+
+            <div class="btn_wrap">
+                <a href="" class="btn_run">모의실행</a>
+                <a href="" class="btn_result">결과조회</a>
+            </div>
 
             </div>
         </section>
         <section class="map">
             <img src="images/map_sample.png" alt="지도샘플">
+            <!-- 범례 -->
+            <div class="legend_wrap">
+            <div class="legend">
+                <div class="legend_item">
+                  <span>1150</span>
+                  <div class="legend_color" style="background-color: #00EEF0;"></div>
+                  <span>0.03k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>1100</span>
+                  <div class="legend_color" style="background-color: #00EEF0;"></div>
+                  <span></span>
+                </div>
+                <div class="legend_item">
+                  <span>1050</span>
+                  <div class="legend_color" style="background-color: #00E6F0;"></div>
+                  <span>0.02k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>1000</span>
+                  <div class="legend_color" style="background-color: #00DCF0;"></div>
+                  <span></span>
+                </div>
+                <div class="legend_item">
+                  <span>950</span>
+                  <div class="legend_color" style="background-color: #00D4F0;"></div>
+                  <span>0.07k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>900</span>
+                  <div class="legend_color" style="background-color: #00CCF0;"></div>
+                  <span>0.01k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>850</span>
+                  <div class="legend_color" style="background-color: #00C3F0;"></div>
+                  <span></span>
+                </div>
+                <div class="legend_item">
+                  <span>800</span>
+                  <div class="legend_color" style="background-color: #00BBF0;"></div>
+                  <span>0.03k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>750</span>
+                  <div class="legend_color" style="background-color: #00B2F0;"></div>
+                  <span>0.04k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>700</span>
+                  <div class="legend_color" style="background-color: #00A9F0;"></div>
+                  <span></span>
+                </div>
+                <div class="legend_item">
+                  <span>650</span>
+                  <div class="legend_color" style="background-color: #00A1F0;"></div>
+                  <span>0.02k㎡</span>
+                </div>
+                <div class="legend_item">
+                  <span>600</span>
+                  <div class="legend_color" style="background-color: #0098F0;"></div>
+                  <span></span>
+                </div>
+                <div class="legend_item">
+                    <span>550</span>
+                    <div class="legend_color" style="background-color:#0086F0 ;"></div>
+                    <span>0.05k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>500</span>
+                    <div class="legend_color" style="background-color:#007EF0 ;"></div>
+                    <span>0.02k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>450</span>
+                    <div class="legend_color" style="background-color:#006DF0 ;"></div>
+                    <span></span>
+                </div>
+                <div class="legend_item">
+                    <span>400</span>
+                    <div class="legend_color" style="background-color:#0064F0;"></div>
+                    <span></span>
+                </div>
+                <div class="legend_item">
+                    <span>350</span>
+                    <div class="legend_color" style="background-color:#005BF0;"></div>
+                    <span>0.03k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>300</span>
+                    <div class="legend_color" style="background-color:#0053F0;"></div>
+                    <span>0.02k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>250</span>
+                    <div class="legend_color" style="background-color:#004AF0;"></div>
+                    <span></span>
+                </div>
+                <div class="legend_item">
+                    <span>200</span>
+                    <div class="legend_color" style="background-color:#0041F0;"></div>
+                    <span>0.02k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>150</span>
+                    <div class="legend_color" style="background-color:#0039F0 ;"></div>
+                    <span>0.21k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>100</span>
+                    <div class="legend_color" style="background-color:#0030F0;"></div>
+                    <span>0.35k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>50</span>
+                    <div class="legend_color" style="background-color:#0028F0;"></div>
+                    <span>6.75k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>0</span>
+                    <div class="legend_color" style="background-color:#0028F0;"></div>
+                    <span>5.82k㎡</span>
+                </div>
+                <div class="legend_item">
+                    <span>No.ofCell</span>
+                    <div class="legend_color" style=""></div>
+                    <span>13.49 k㎡</span>
+                </div>
+            
+            
+              </div>
+              <div class="compass"></div>
+            </div>
+            <!-- //범례 -->
         </section>
 
         

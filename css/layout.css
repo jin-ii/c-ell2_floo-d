@@ -5,10 +5,12 @@
 .lnb h1 a span{font-size:20px;font-family:poppins;margin-right:5px}
 .lnb h1 a:hover{text-decoration:none}
 
+.lnb_contents{border-top:2px solid #222}
+
 /* nav */
 .nav{display:flex;margin-bottom:7px}
 .nav li{flex:1}
-.nav li a{display:block;margin-right:1px;text-align:center;height:55px;line-height:55px;background:#e9e9e9;font-size:17px;font-weight:500;color:#676767}
+.nav li a{display:block;margin-right:1px;text-align:center;height:50px;line-height:48px;background:#e9e9e9;font-size:17px;font-weight:500;color:#676767}
 .nav li a:hover,.nav li a.on{background:#879DBE;color:#fff;text-decoration:none;}
 .nav li:last-child a{margin-right:0}
 
@@ -66,3 +68,59 @@
 .checkbox_label{font-size:13px;color:#676767;margin-left:7px}
 .form button{cursor:pointer;background:#22325B;color:#fff;text-align:center;display:block;width:100%;height:60px;line-height:60px;border:0;font-size:16px;font-weight:700;margin-top:40px}
 .form button:hover{background:#1c294b}
+
+
+/* lnb form */
+.field_type1{display:flex;flex-wrap:wrap;margin-top:-1px}
+.field_type1 .label_title{min-width:85px;min-height:50px;background:#F3F5F8;color:#9399A3;display:flex;align-items:center;justify-content:center;border:1px solid #C7D1DF}
+.field_type1 .field_wrap{display:flex;flex:1;min-width:0}
+.field_type1 .field_wrap select{border:1px solid #C7D1DF;font-size:15px;flex:1;min-width:0;height:50px;margin-left:-1px}
+.field_type1 .field_wrap input{border:1px solid #C7D1DF;font-size:15px;flex:1;min-width:0;height:50px;margin-left:-1px}
+.field_type1 .field_wrap textarea{border:1px solid #C7D1DF;width:100%;margin-left:-1px;text-align:left;overflow-y:scroll}
+
+
+.field_type1 .field_wrap_unit{display:flex;flex:1;min-width:0;border:1px solid #c7D1DF}
+.field_type1 .field_wrap_unit input{border:0;font-size:15px;flex:1;min-width:0;height:50px;margin-left:-1px}
+.field_type1 .field_wrap_unit .unit{display:flex;align-items:center;color:#666;font-weight:300;padding:0 7px 0 4px}
+
+
+.field_type2{display:flex;padding:12px}
+.field_wrap2{position:relative;width:100%;padding:0 2px}
+
+.field_type2 input{background:#f3f3f3}
+.field_type2 select{background-color:#f3f3f3;border:1px solid #C7D1DF;font-size:15px;flex:1;min-width:0;
+    height:40px;line-height:40px;padding-right:24px;margin-left:-1px}
+
+.label_type1{display:block;cursor:pointer;color:#666;font-weight:400;font-size:15px;margin-bottom:5px}
+.label_type1 span{font-size:11px;line-height:13px}
+.field_wrap3{display:flex;position:relative;width:100%;padding:0 2px}
+.field_wrap3 .label_type1{white-space:nowrap;display:flex;align-items:center;margin-right:7px}
+
+
+/* 버튼 */
+.btn_wrap{display:flex;margin-top:20px;padding:0 15px}
+.btn_wrap a{display:block;flex:1;text-align:center;height:60px;line-height:60px;color:#fff;border-radius:3px}
+.btn_wrap a:hover{text-decoration:none}
+.btn_wrap a.btn_run{background:#595A6C;margin-right:4px}
+.btn_wrap a.btn_run:hover{background:#4b4b5c}
+.btn_wrap a.btn_result{background:#5D8ACE}
+.btn_wrap a.btn_result:hover{background:#5782c4}
+
+/* 공통 */
+.s_title{width:100%;height:38px;line-height:36px;color:#4B5B73;font-size:14px;font-weight:500;background:#e8eef7;
+    border-top:1px solid #B0BFD6;border-bottom:1px solid #B0BFD6;padding:0 15px}
+.input_type1{width:100%;border:1px solid #ddd;padding:0 8px;height:50px;line-height:50px;font-size:15px}
+
+.txt_black{color:#222}
+.txt_red{color:#e02121}
+.txt_blue{color:#2a66d6}
+
+/* 범례 */
+.legend_wrap{position:absolute;bottom:20px;right:20px;}
+.legend{position:relative;background-color:rgba(0, 0, 0, 0.7);border:1px solid #555;padding:15px 15px 55px}
+.legend_item{display:flex;align-items:center;margin-bottom:1px;color: #fff;font-size:13px;font-weight:100;letter-spacing:0}
+.legend_color{width:38px;height:13px;display:flex;align-items:center;margin:0 10px}
+.legend_item span:first-child{display:block;text-align:right;min-width:52px}
+.legend_item span:last-child{display:block;text-align:lerightt;}
+.compass{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:22px;height:31px;
+    background:url('../images/compass.png') no-repeat;}
