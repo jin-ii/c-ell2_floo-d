@@ -72,7 +72,7 @@
 
 /* lnb form */
 .field_type1{display:flex;flex-wrap:wrap;margin-top:-1px}
-.field_type1 .label_title{min-width:85px;min-height:50px;background:#F3F5F8;color:#9399A3;display:flex;align-items:center;justify-content:center;border:1px solid #C7D1DF}
+.field_type1 .label_title{min-width:85px;min-height:50px;background:#F3F5F8;color:#5e636b;display:flex;align-items:center;justify-content:center;border:1px solid #C7D1DF}
 .field_type1 .field_wrap{display:flex;flex:1;min-width:0}
 .field_type1 .field_wrap select{border:1px solid #C7D1DF;font-size:15px;flex:1;min-width:0;height:50px;margin-left:-1px}
 .field_type1 .field_wrap input{border:1px solid #C7D1DF;font-size:15px;flex:1;min-width:0;height:50px;margin-left:-1px}
@@ -106,6 +106,10 @@
 .btn_wrap a.btn_result{background:#5D8ACE}
 .btn_wrap a.btn_result:hover{background:#5782c4}
 
+.btn_download{position:absolute;top:020px;right:40px;z-index:99;
+    display:block;padding:0 20px 0 50px;height:50px;line-height:48px;color:#fff;background:#2F568F url('../images/btn_download.svg') 20px center no-repeat;}
+.btn_download:hover{background-color:#28497a;text-decoration:none}
+
 /* 공통 */
 .s_title{width:100%;height:38px;line-height:36px;color:#4B5B73;font-size:14px;font-weight:500;background:#e8eef7;
     border-top:1px solid #B0BFD6;border-bottom:1px solid #B0BFD6;padding:0 15px}
@@ -124,3 +128,31 @@
 .legend_item span:last-child{display:block;text-align:lerightt;}
 .compass{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);width:22px;height:31px;
     background:url('../images/compass.png') no-repeat;}
+
+    
+/* popup */
+.popup{position:relative;min-width:1150px;min-height:800px;margin:0 auto;z-index:999;background:#fff;box-shadow:0 0 5px #555;padding:30px 20px 0 20px}
+.popup a.btn_close{display:block;position:absolute;top:5px;right:10px;z-index:7}
+.popup a i{font-size:24px;color:#222}
+
+
+/* popup tabmenu */
+.tabnav li a{display:block;font-size:16px;color:#666;padding:0 30px;min-width:180px;height:45px;line-height:43px;text-align:center}
+.tabnav li a:hover{font-weight:bold}
+.tabnav li:hover a,.tabnav li.active a{text-decoration:none;}
+.tabnav{display:flex;margin:0;width:100%;border-bottom:1px solid #000}
+.tabnav li{border-left:1px solid #ddd;border-right:1px solid #ddd;border-top:1px solid #ddd;position:relative}
+.tabnav li.active a{color:#222;font-weight:bold}
+.tabnav li.active a:before{content:"";position:absolute;left:0px;bottom:-3px;width:100%;height:1px;
+border-bottom:5px solid #fff;z-index:9;}
+.tabnav li.active{border-left:1px solid #222;border-right:1px solid #222;border-top:1px solid #222;}
+
+.tabcontent{padding:30px 20px 30px 20px;}
+.tabcontent .graph{margin:0 auto}
+
+
+/* table */
+.table_type1{border-top:2px solid #222}
+.table_type1 table{width:100%;border-collapse:collapse;border-spacing:0;}
+.table_type1 th,td{border:1px solid #ddd;padding:0px 10px;font-size:13px;text-align:center;height:40px;line-height:38px;font-size:15px}
+.table_type1 th{background:#f8f8f8;color:#222;font-weight:bold;}

@@ -67,7 +67,7 @@ select::-ms-expand{display:none}
 
 
 .flex{display:flex}
-.ml-0{}
+.ml-0{margin-left:-1px}
 .mr-4{margin-right:4px}
 .mb-10{margin-bottom:10px}
 .pt-0{padding-top:0 !important}
